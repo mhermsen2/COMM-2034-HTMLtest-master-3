@@ -1,0 +1,67 @@
+body {
+  font-family: times;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+
+  }
+}
+
+header {
+  grid-column: span 3;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.5em;
+  background-color: #2fb3d1;
+  color: white;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+nav {
+  background-color: #f0912a;
+  padding: 20px;
+  font-size: 1.5em;
+}
+
+aside {
+  padding: 20px;
+  background-color: #f0912a;
+  color: white;
+}
+
+footer {
+  grid-column: span 3;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.5em;
+  background-color: #2fb3d1;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
